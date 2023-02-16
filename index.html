@@ -1,0 +1,117 @@
+<!DOCTYPE>
+<html>
+    <!--CSS Presets-->
+    <style>
+        header{
+            text-align: center; 
+            color: #ddc8bf;
+            font-size: 3cm;
+        }
+        body{
+            background-color: #162528;
+            background-attachment:scroll;
+            background-image:url(Resources/background.jpg);
+            background-blend-mode:color-dodge;
+        }
+        a:link, a:visited, a:hover{
+            text-decoration:none;
+        }
+        a:link{
+            opacity: 1;
+        }
+        a:visited{
+            opacity: 1;
+        }
+        .link_hover:hover{
+            opacity: 0.5;
+        }
+        li{
+            opacity: 1.0;
+        }
+        li:hover{
+            opacity: 0.5;
+        }
+        .grid-container{
+            display: grid;
+        }
+        /*This is a font*/
+        .body_text{
+            font-family: 'Times New Roman', Times, serif;
+            font-size:12pt;
+            color:#ddc8bf;
+        }
+        .topic_text{
+            font-family: 'Times New Roman', Times, serif;
+            font-size:22pt;
+            font-weight:bold;
+            color:#ddc8bf;
+        }
+        /*Animation*/
+        .parent{
+            /*background-color:#162528;*/
+            height:200px;
+            width: 30px;
+            
+        }
+        .child{
+            background-color:#162528;
+            opacity: 0.7;
+            height:0%;
+            width: 100%;
+            
+        }
+        .parent:hover .child{
+            height: 100%;
+            transition: height 0.5s;
+        }
+        #topright {
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-decoration: none;
+        }
+        </style>
+        
+
+    </style>
+    <!--Webpage Visible-->
+    <title>Links Directory</title>
+    <!--Top of Page-->
+    <header style = "text-align:left; grid-template-columns:33vw 33vw auto; display:inline-grid;">
+        <img height="240px" width="240px" src="https://i.pinimg.com/564x/d7/aa/5a/d7aa5a306b3bdf395d45366ae638144f.jpg" alt = "White Oak by Chillhop">
+        <b style = "white-space:nowrap; position:relative; top:50; font-family: 'Times New Roman', Times, serif;">Links Directory</b>
+        <div id="topright">
+            <div style="height:20px; width: 30px; background-color:#FFFF;"></div> 
+            <div class="parent">
+                <div class="child"></div>        
+            </div>
+            
+        </div>
+    </header>
+        <div style = "position:relative; right:-5%; margin-right:94.5%;" class="link_hover"><a class="body_text" href="TextBook.html"><p>TextBook</p></a></div>
+    <body>
+        <!--Container for Weeks & Assignments-->
+        <div>
+            <div class="grid-container" style="grid-template-columns: 10% 10%;">
+                <div class="grid-item">
+                    <p class="topic_text">Week 3</p>
+                    <p class="link_hover"><a class="body_text" href = "A3-recursive-fcts.pdf">Recursion A3</a></p>
+                </div>
+                <div class="grid-item">
+                    <p class="topic_text";>Week 4</p>
+                    <p class="link_hover"><a class="body_text" href = "Lab.pdf">Lab 4</a></p>
+                    <p class="link_hover"><a class="body_text" href = "Assignment4.html">Sorting A4></a></p>
+                </div>
+            </div>
+        </div>
+        <!--Container for videos/images-->
+        <div style="display:grid; grid-template-rows: auto auto auto; grid-template-columns: 230px">
+            <p class = "link_hover"><a class = "body_text" href = "nine0.html">Nine0</a></p>
+            <!--<p><a href="makima.html"><img class="link_hover" width=230 height=362 src = "https://img-9gag-fun.9cache.com/photo/axMO6yL_460s.jpg"></img></a></p>-->
+        </div>
+    </body>
+
+<body>
+    
+</body>
+</html>
